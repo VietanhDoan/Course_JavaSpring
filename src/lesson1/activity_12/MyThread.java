@@ -11,6 +11,7 @@ class MyThread extends Thread {
     }
 
     public void run() {
+        this.setName(name);
         while (true) {
             try {
                 System.out.println(name);
